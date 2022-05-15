@@ -8,17 +8,19 @@ class qa_html_theme_layer extends qa_html_theme_base {
     parent::head_script();
 
     $this->output_raw('<script>
-document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener("contextmenu", function (e){
+    e.preventDefault();
+}, false); 
 document.onkeydown = function (e) {
   e = e || window.event; //Get event
   if (e.ctrlKey) {
     var c = e.which || e.keyCode; //Get key code
     switch (c) {
-      case 83: //Block Ctrl+S
-      case 87: //Block Ctrl+W
-      case 73: //Block Ctrl+I
-      case 86: //Block Ctrl+V
-      case 67: //Block Ctrl+C
+      case 83: 
+      case 87: 
+      case 73: 
+      case 86: 
+      case 67: 
         e.preventDefault();
         e.stopPropagation();
         break;
