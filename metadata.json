@@ -1,0 +1,11 @@
+{
+	"name": "Stop Copy Paste",
+	"uri": "https://github.com/kuddus95/stop-copy-paste",
+	"description": "Disable mouse click and stop copy, paste post of q2a",
+	"version": "1.8",
+	"date": "2022-05-15",
+	"author": "Aman", 
+	"author_uri": "http://www.ask-ans.com",
+	"license": "GPLv2",
+	"load_order": "after_db_init"
+}
